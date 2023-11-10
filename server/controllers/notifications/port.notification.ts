@@ -17,7 +17,7 @@ export const PortNotification = handleAsync(async function (
     );
   }
 
-  const subject = `Message From ${name} on Portfolio`;
+  const subject = `Message From ${name} on Wisdom's Portfolio`;
   const SENT_FROM = process.env.EMAIL_USER as string;
   const REPLY_TO = email;
   const body = message;
@@ -26,6 +26,6 @@ export const PortNotification = handleAsync(async function (
   sendEmail({ subject, body, send_to: RECIEPIENT, SENT_FROM, REPLY_TO });
   res.status(200).json({
     status: "success",
-    message: `Your email has been sent! ✅ Thanks for reaching out😎`,
+    message: `Your email has been sent!✅ Thanks for reaching out😎`,
   });
 });

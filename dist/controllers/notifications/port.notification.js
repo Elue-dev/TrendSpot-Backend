@@ -22,7 +22,7 @@ exports.PortNotification = (0, async_handler_1.default)(function (req, res, next
         if (!email || !name || !message) {
             return next(new global_error_1.AppError("Name, Email, Message are all required fields.", 400));
         }
-        const subject = `Message From ${name} on Portfolio`;
+        const subject = `Message From ${name} on Wisdom's Portfolio`;
         const SENT_FROM = process.env.EMAIL_USER;
         const REPLY_TO = email;
         const body = message;
@@ -30,7 +30,7 @@ exports.PortNotification = (0, async_handler_1.default)(function (req, res, next
         (0, email_service_1.default)({ subject, body, send_to: RECIEPIENT, SENT_FROM, REPLY_TO });
         res.status(200).json({
             status: "success",
-            message: `Your email has been sent! ✅ Thanks for reaching out😎`,
+            message: `Your email has been sent!✅ Thanks for reaching out😎`,
         });
     });
 });
