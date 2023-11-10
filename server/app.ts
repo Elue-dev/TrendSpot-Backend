@@ -32,7 +32,8 @@ app.use(
       "exp://172.20.10.10:19000",
       "http://localhost:19006",
       "https://trend-spot-admin.vercel.app",
-      "https://trendspotadmin.vercel.app"
+      "https://trendspotadmin.vercel.app",
+      "https://www.eluewisdom.com",
     ],
     credentials: true,
   })
