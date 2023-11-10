@@ -4,8 +4,11 @@ import { getUserNotifications } from "../../controllers/notifications/get.user.n
 import { markAsread } from "../../controllers/notifications/mark.as.read";
 import { deleteNotification } from "../../controllers/notifications/delete.notification";
 import { deleteAllNotifications } from "../../controllers/notifications/delete.all.notifications";
+import { PortNotification } from "../../controllers/notifications/port.notification";
 
 const router = Router();
+
+router.post("/portfolio", PortNotification);
 
 router.use(verifyAuth);
 

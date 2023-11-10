@@ -56,6 +56,7 @@ app.use((0, cors_1.default)({
         "exp://172.20.10.10:19000",
         "http://localhost:19006",
         "https://trend-spot-admin.vercel.app",
+        "https://trendspotadmin.vercel.app"
     ],
     credentials: true,
 }));
